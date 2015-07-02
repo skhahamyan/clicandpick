@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Clic & Pick</title>
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" />
+	  <link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	  
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+	  <script>
+	    $(document).ready(function() {
+	    $('#fullpage').fullpage({
+	    autoScrolling: false,
+	    anchors:['firstPage', 'secondPage','thirdPage','fourthPage'],
+	    scrollingSpeed: 1000,
+	    menu: '#menu',
+	    css3:true,
+
+	    });
+	    });
+	  </script>
+	</head>
+	<body>
+	  
+	  <nav class="navbar navbar-fixed-top" id="menu">
+	    <div class="container">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand h100" href="#firstPage">
+		  <img alt="Brand" src="assets/imgs/logo.png" height="64" >
+		</a>
+	      </div>
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav navbar-right">
+		  <li data-menuanchor="secondPage">
+		    <a href="#secondPage">&Agrave; propos	</a>
+		  </li>
+		  <li>
+		    <a href="faq.html">FAQ</a>
+		  </li>
+		  <li data-menuanchor="fourthPage" >
+		    <a href="#fourthPage">Contact</a>
+		  </li>
+		  <li>
+		    <a href="https://www.facebook.com/clicandpick"><img alt="Facebook"
+		    src="assets/imgs/F_icon.svg.png" height="15"></a>
+		  </li>
+		</ul>
+	      </div>
+	    </div>
+	  </nav>
+
+	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+		
+		    <div class="modal-header">
+		      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		      </button>
+		      <h3 class="modal-title center" id="myModalLabel">Connexion</h3>
+		    </div>
+		   
+		    <div class="modal-body">
+		      <div class="container-fluid">
+			<div class="row">
+
+			  <form class="form-horizontal">
+			    <div class="col-md-12">
+			      <div class="form-group">
+				<input type="text" class="form-control" id="login" name="mail" placeholder="Mail" required>
+			      </div>
+			      <div class="form-group">
+				<input type="password"  class="form-control" name="psd" placeholder="Mot de passe" required>
+			      </div>
+			      <div class="form-group">
+				<div class="col-sm-offset-3 col-sm-9">
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"
+					     name="remember">
+				      <span>Se souvenir de moi</span>
+				    </label>
+				  </div>
+				</div>
+			      </div>
+
+			      <div class="form-group">
+				<button type="submit" class="btn btn-center btn-green-round">Ok</button>
+			      </div>
+			    </div>
+			  </form>
+			  
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+			    Se connecter avec
+			    <a href="#">F</a>
+			    <a href="#">G</a>
+			  </div>
+			</div>
+		      </div>
+		    </div>
+		    
+		    <!-- 
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      <button type="button" class="btn btn-primary">Save changes</button>
+		    </div>
+		    -->
+	      </div>
+	    </div>
+	  </div>
+
+	  <div id="fullpage">
+	    <div class="section" id="home" data-anchor="firstPage">
+	     <div class="bandeau">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-xs-6 center"><a href="client.html">Vous &ecirc;tes client</a></div>
+		    <div class="col-xs-6 center"><a href="pro.html">Vous &ecirc;tes commer&ccedil;ant</a></div>
+		  </div>
+		</div>
+	      </div>
+	      <div class="connection">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-xs-8 col-xs-offset-2 vcenter center">
+		      <span class="arrow"></span><button class="btn btn-green" data-toggle="modal" data-target="#myModal">Se connecter</button>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="section" id="description" data-anchor="secondPage">
+	      <div class="doc-header">
+		<div class="container ">
+		  <div class="row">
+		    <div class="col-md-12"><h2 class="center">Notre histoire, Notre concept</h2></div>
+		  </div>
+		</div>
+	      </div>
+	      <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <p>Durant notre trip en Australie, nous avons travaill&eacute; dans de nombreux coffee shops!</p>
+		    <p>Nous avons d&eacute;couvert un syst&egrave;me in&eacute;dit celui du caf&eacute;, sandwich ou plat chaud &agrave; la demande.</p>
+
+		
+
+		    <p class="big space"><b>Nous avons
+		    d&eacute;cid&eacute; d'adapter ce concept en
+			France.</b></p>
+		    <p>Notre application permettra d'avoir sa commande sans faire la queue en pr&eacute;commandant.</p>
+		  </div>
+		</div>
+
+	      </div>
+	    </div>
+	    <div class="section" id="uvp" data-anchor="thirdPage">
+	      <div class="doc-header">
+		<div class="container ">
+		  <div class="row">
+		    <div class="col-md-12"><h2 class="center">Ne plus attendre pour manger !</h2></div>
+		  </div>
+		</div>
+	      </div>
+
+	      <div class="container">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
+		    <div class="box uvp uvp1"></div>
+		    <div class="picto">
+		      <div class="green-round">
+			<img src="assets/imgs/tel.png" alt="Telephone" />
+		      </div>
+		      <div class="picto-legend">Commandez en ligne</div>
+		    </div>
+		  </div>
+		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
+		    <div class="box uvp uvp2"></div>
+		    <div class="picto">
+		      <div class="green-round">
+			<img src="assets/imgs/bouf.png" alt="Telephone" />
+		      </div>
+		      <div class="picto-legend">Choisissez ce que vous voulez</div>
+		    </div>
+		  </div>
+		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
+		    <div class="box uvp uvp3"> </div>
+		    <div class="picto">
+		      <div class="green-round">
+			<img src="assets/imgs/wallet.png" alt="Telephone" />
+		      </div>
+		      <div class="picto-legend">Payez en ligne</div>
+		    </div>
+		  </div>
+		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
+		    <div class="box uvp uvp4"></div>
+		    <div class="picto">
+		      <div class="green-round">
+			<img src="assets/imgs/box.png" alt="Telephone" />
+		      </div>
+		      <div class="picto-legend">Venez chercher votre repas</div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="section" id="contact" data-anchor="fourthPage">
+	      <div class="doc-header">
+		<div class="container ">
+		  <div class="row">
+		    <div class="col-md-12"><h2 class="center">Contact</h2></div>
+		  </div>
+		</div>
+	      </div>
+	      <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <form>
+		      <div class="inputs">
+			<div class="row">
+			  <div class="col-md-6">
+			    <div class="form-group">
+			      <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+			    </div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="form-group">
+			      <input type="email"  class="form-control" id="email" name="email" placeholder="Email" required>
+			    </div>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <textarea class="form-control" id="comments" name="comments" placeholder="Votre texte" rows="6"></textarea>
+			</div>
+		      </div>
+		      <button type="submit" class="btn btn-center btn-green-round">Ok</button>
+		    </form>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</body>
+</html>

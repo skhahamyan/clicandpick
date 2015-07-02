@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clic & Pick</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" />
+    <link rel="stylesheet"
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+    <script>
+      $(document).ready(function() {
+      $('#fullpage').fullpage({
+      autoScrolling: false,
+      anchors:['firstPage'],
+      scrollingSpeed: 1000,
+      menu: '#menu',
+      css3:true,
+
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" id="menu">
+      <div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand h100" href="index.html#firstPage">
+	    <img alt="Brand" src="assets/imgs/logo.png" height="64" >
+	  </a>
+	</div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+	    <li data-menuanchor="secondPage">
+	      <a href="index.html#secondPage">&Agrave; propos	</a>
+	    </li>
+	    <li>
+	      <a href="faq.html">FAQ</a>
+	    </li>
+	    <li data-menuanchor="fourthPage" >
+	      <a href="index.html#fourthPage">Contact</a>
+	    </li>
+	    <li>
+	      <a href="https://www.facebook.com/clicandpick"><img alt="Facebook"
+								  src="assets/imgs/F_icon.svg.png" height="15"></a>
+	    </li>
+	  </ul>
+	</div>
+      </div>
+    </nav>
+
+    <div id="fullpage">
+      <div class="section">
+	
+	<div class="doc-header">
+	  <div class="container ">
+	    <div class="row">
+	      <div class="col-md-12"><h3 class="center">Foire aux questions</h3>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-12">
+	      <form>
+		<div class="inputs">
+		  <div class="row">
+		    <div class="col-md-6">
+		      <div class="form-group">
+			<input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+		      </div>
+		    </div>
+		    <div class="col-md-6">
+		      <div class="form-group">
+			<input type="email"  class="form-control" id="email" name="email" placeholder="Email" required>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <textarea class="form-control" id="comments"
+			      name="comments"
+			      placeholder="Posez nous vos questions/
+commentaires" rows="6" Required></textarea>
+		  </div>
+		</div>
+		<button type="submit" class="btn btn-center btn-green-round">Ok</button>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

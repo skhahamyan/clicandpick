@@ -1,0 +1,229 @@
+	@font-face {
+    font-family:"TrashHand";
+    src: url("../fonts/TrashHand.ttf") /* TTF file for CSS3 browsers */
+}
+
+body {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.navbar-toggle {
+    background-color: #f26356;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: #f6a251;
+    border-top: 2px solid transparent;
+    font-weight: 100;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: transparent;
+}
+
+.navbar-nav a:hover,
+#menu .active a {
+    border-top: 2px solid #f26356;
+}
+
+.navbar-nav {
+    padding: 22px 0;
+}
+
+#home {
+    background: url("../imgs/back.jpg");
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+.bandeau{
+    background-color: rgba(150,210,176,0.82); /* rgba(242, 99, 86, 0.82); */
+    position: absolute;
+    top: 97px;
+    left: 0;
+    right: 0;
+    
+
+}
+.bandeau a {
+    color: white;
+    line-height: 82px;
+    font-size: 28px;
+}
+
+.btn-green {
+    background-color: rgba(150,210,176,0.82);  /* #96d2b0; */
+    color: white;
+    font-size: 32px;
+}
+
+.connection {
+    position: relative;
+    bottom: -30%;
+}
+
+.arrow {
+    background-image: url("../imgs/arrow.svg");
+    display: inline-block;
+    height: 53px;
+    width: 50px;
+    position: inherit;
+    top: -10px;
+    right: 20px;
+}
+
+h2, h3{
+    color: #f26356;
+    font-family: "TrashHand";
+}
+
+h2 {
+    font-size: 48pt;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#description {
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    
+    background-image: url("../imgs/australie.png");
+    background-size: cover;
+
+    text-align: center;
+}
+
+.big {
+    font-size: 28px;
+}
+
+.space {
+    margin: 38px 0;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.box:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.box-content {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.uvp {
+    background-size: cover;
+}
+
+.uvp1 {
+    background-image: url("../imgs/uvp1.png");
+}
+
+.uvp2 {
+    background-image: url("../imgs/uvp2.png");
+}
+
+.uvp3 {
+    background-image: url("../imgs/uvp3.png");
+}
+
+.uvp4 {
+    background-image: url("../imgs/uvp4.png");
+}
+
+.green-round {
+    background-color: rgb(150,210,176);
+    border-radius: 50%;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.picto-legend {
+    color: #f26356;
+    font-size: 28px;
+    font-family: "TrashHand";
+    text-align: center;
+    font-weight: 100;
+}
+
+.stick {
+    padding:0;
+}
+
+.picto {
+  top: -40px;
+  position: relative;
+}
+
+.btn-center {
+    display: block;
+    margin: auto;
+}
+
+.btn-green-round {
+    background-color: rgb(150,210,176);
+    border-radius: 50%;
+    text-align: center;
+    height: 64px;
+    width: 64px;
+    line-height: 57px;
+    color: white;
+    font-family: "TrashHand";
+    font-size: 48px;
+}
+
+.inputs {
+    margin: 5% 0;
+}
+
+.green {
+    color: rgb(150,210,176);
+}
+
+label.green {
+    font-size: 33px;
+}
+
+.modal-content {
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.modal-header {
+    border-bottom: 0;
+}
