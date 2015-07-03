@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	  <title>Clic & Pick</title>
 	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" />
 	  <link rel="stylesheet"
@@ -25,7 +27,6 @@
 	  </script>
 	</head>
 	<body>
-	  
 	  <nav class="navbar navbar-fixed-top" id="menu">
 	    <div class="container">
 	      <!-- Brand and toggle get grouped for better mobile display -->
@@ -45,9 +46,11 @@
 		  <li data-menuanchor="secondPage">
 		    <a href="#secondPage">&Agrave; propos	</a>
 		  </li>
+		  <!--
 		  <li>
 		    <a href="faq.html">FAQ</a>
 		  </li>
+		  -->
 		  <li data-menuanchor="fourthPage" >
 		    <a href="#fourthPage">Contact</a>
 		  </li>
@@ -60,113 +63,83 @@
 	    </div>
 	  </nav>
 
-	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	    <div class="modal-dialog" role="document">
-	      <div class="modal-content">
-		
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		      </button>
-		      <h3 class="modal-title center" id="myModalLabel">Connexion</h3>
-		    </div>
-		   
-		    <div class="modal-body">
-		      <div class="container-fluid">
-			<div class="row">
-
-			  <form class="form-horizontal">
-			    <div class="col-md-12">
-			      <div class="form-group">
-				<input type="text" class="form-control" id="login" name="mail" placeholder="Mail" required>
-			      </div>
-			      <div class="form-group">
-				<input type="password"  class="form-control" name="psd" placeholder="Mot de passe" required>
-			      </div>
-			      <div class="form-group">
-				<div class="col-sm-offset-3 col-sm-9">
-				  <div class="checkbox">
-				    <label>
-				      <input type="checkbox"
-					     name="remember">
-				      <span>Se souvenir de moi</span>
-				    </label>
-				  </div>
+		<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title text-center" id="myModalLabel">Inscrivez-vous</h4>
 				</div>
-			      </div>
+				  <div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
 
-			      <div class="form-group">
-				<button type="submit" class="btn btn-center btn-green-round">Ok</button>
-			      </div>
-			    </div>
-			  </form>
-			  
+						<!-- Begin MailChimp Signup Form -->
+
+						
+<form action="//clicandpick.us11.list-manage.com/subscribe/post?u=d18c52ee0f0cdce46edc85fa6&amp;id=8b996af059" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-horizontal validate" target="_blank" novalidate>
+
+								<div class="col-md-12">
+									<div class="form-group">
+										<input class="form-control" type="text" value="" name="FNAME" class="required" placeholder="Pr&eacute;nom" required>
+									</div>
+									<div class="form-group">
+										<input type="email" value="" name="EMAIL" class="required form-control" placeholder="Email" required>
+									</div>
+									<div class="form-group">
+									<textarea class="form-control" name="AVIS" placeholder="Donnez votre avis sur le concept" rows="3"></textarea>
+									</div>
+									  <div class="form-group checkbox bottom15">
+										<label>
+										  <input type="checkbox" value="1" name="group[4637][1]"> Client
+										</label>
+									  <label>
+										  <input type="checkbox" value="2" name="group[4637][2]"> Commercant
+										</label>
+									  </div>
+
+								
+								    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d18c52ee0f0cdce46edc85fa6_8b996af059" tabindex="-1" value=""></div>
+
+								<div class="form-group text-center">
+									<input type="submit" name="subscribe" value="Ok" class="btn btn-green-round" />
+								</div>
+								</div>
+							</form>			  
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-			  <div class="col-md-12">
-			    Se connecter avec
-			    <a href="#">F</a>
-			    <a href="#">G</a>
-			  </div>
-			</div>
-		      </div>
-		    </div>
-		    
-		    <!-- 
-		    <div class="modal-footer">
-		      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      <button type="button" class="btn btn-primary">Save changes</button>
-		    </div>
-		    -->
-	      </div>
-	    </div>
-	  </div>
+		</div>
+	</div>
 
 	  <div id="fullpage">
 	    <div class="section" id="home" data-anchor="firstPage">
-	     <div class="bandeau">
-		<div class="container">
-		  <div class="row">
-		    <div class="col-xs-6 center"><a href="client.html">Vous &ecirc;tes client</a></div>
-		    <div class="col-xs-6 center"><a href="pro.html">Vous &ecirc;tes commer&ccedil;ant</a></div>
-		  </div>
-		</div>
-	      </div>
-	      <div class="connection">
-		<div class="container">
-		  <div class="row">
-		    <div class="col-xs-8 col-xs-offset-2 vcenter center">
-		      <span class="arrow"></span><button class="btn btn-green" data-toggle="modal" data-target="#myModal">Se connecter</button>
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	    <div class="section" id="description" data-anchor="secondPage">
-	      <div class="doc-header">
-		<div class="container ">
-		  <div class="row">
-		    <div class="col-md-12"><h2 class="center">Notre histoire, Notre concept</h2></div>
-		  </div>
-		</div>
-	      </div>
-	      <div class="container">
-		<div class="row">
-		  <div class="col-md-12">
-		    <p>Durant notre trip en Australie, nous avons travaill&eacute; dans de nombreux coffee shops!</p>
-		    <p>Nous avons d&eacute;couvert un syst&egrave;me in&eacute;dit celui du caf&eacute;, sandwich ou plat chaud &agrave; la demande.</p>
+	     	<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Marre de faire la queue pour manger!</h1>
+					</div>
+					<div class="col-md-12 sub">
+						<span>Rejoignez la 1&egrave;re application o&ugrave; vous pouvez commander et r&eacute;cup&eacute;rer votre repas sans faire la queue!</span>
+					</div>
+					<div class="form-inline col-md-12 top2e">
+								<div class="form-group">
+									<input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Email">
+								</div>
+							<button type="submit" class="btn btn-red btn-lg" data-toggle="modal" data-target="#myModal">Inscrivez-vous</button>
+					</div>
+<!--					<div class="col-md-12 text-center">
+						<button type="submit" class="btn btn-red btn-lg margin2e" data-toggle="modal" data-target="#myModal">Inscrivez-vous</button>
+					</div>
+--->
 
+				</div>
+			</div>
+		</div>
 		
 
-		    <p class="big space"><b>Nous avons
-		    d&eacute;cid&eacute; d'adapter ce concept en
-			France.</b></p>
-		    <p>Notre application permettra d'avoir sa commande sans faire la queue en pr&eacute;commandant.</p>
-		  </div>
-		</div>
-
-	      </div>
-	    </div>
 	    <div class="section" id="uvp" data-anchor="thirdPage">
 	      <div class="doc-header">
 		<div class="container ">
@@ -215,6 +188,32 @@
 		    </div>
 		  </div>
 		</div>
+	      </div>
+	    </div>
+		
+			    <div class="section" id="description" data-anchor="secondPage">
+	      <div class="doc-header">
+		<div class="container ">
+		  <div class="row">
+		    <div class="col-md-12"><h2 class="center">Notre histoire, Notre concept</h2></div>
+		  </div>
+		</div>
+	      </div>
+	      <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <p>Durant notre trip en Australie, nous avons travaill&eacute; dans de nombreux coffee shops!</p>
+		    <p>Nous avons d&eacute;couvert un syst&egrave;me in&eacute;dit celui du caf&eacute;, sandwich ou plat chaud &agrave; la demande.</p>
+
+		
+
+		    <p class="big space"><b>Nous avons
+		    d&eacute;cid&eacute; d'adapter ce concept en
+			France.</b></p>
+		    <p>Notre application permettra d'avoir sa commande sans faire la queue en pr&eacute;commandant.</p>
+		  </div>
+		</div>
+
 	      </div>
 	    </div>
 	    <div class="section" id="contact" data-anchor="fourthPage">
