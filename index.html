@@ -1,256 +1,336 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  <title>Clic & Pick</title>
-	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" />
-	  <link rel="stylesheet"
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <title>Clic & Pick</title>
 
-	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	  
-	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
-	  <script>
-	    $(document).ready(function() {
-	    $('#fullpage').fullpage({
-	    autoScrolling: false,
-	    anchors:['firstPage', 'secondPage','thirdPage','fourthPage'],
-	    scrollingSpeed: 1000,
-	    menu: '#menu',
-	    css3:true,
+    <link rel="icon" type="image/x-icon" href="assets/imgs/logo.ico" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" />
+    <link rel="stylesheet"
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-	    });
-	    });
-	  </script>
-	</head>
-	<body>
-	  <nav class="navbar navbar-fixed-top" id="menu">
-	    <div class="container">
-	      <!-- Brand and toggle get grouped for better mobile display -->
-	      <div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		  <span class="sr-only">Toggle navigation</span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand h100" href="#firstPage">
-		  <img alt="Brand" src="assets/imgs/logo.png" height="64" >
-		</a>
-	      </div>
-	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		<ul class="nav navbar-nav navbar-right">
-		  <li data-menuanchor="secondPage">
-		    <a href="#secondPage">&Agrave; propos	</a>
-		  </li>
-		  <!--
-		  <li>
-		    <a href="faq.html">FAQ</a>
-		  </li>
-		  -->
-		  <li data-menuanchor="fourthPage" >
-		    <a href="#fourthPage">Contact</a>
-		  </li>
-		  <li>
-		    <a href="https://www.facebook.com/clicandpick"><img alt="Facebook"
-		    src="assets/imgs/F_icon.svg.png" height="15"></a>
-		  </li>
-		</ul>
-	      </div>
-	    </div>
-	  </nav>
-
-		<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h3 class="modal-title text-center" id="myModalLabel">Inscrivez-vous</h4>
-				</div>
-				  <div class="modal-body">
-					<div class="container-fluid">
-						<div class="row">
-
-						<!-- Begin MailChimp Signup Form -->
-
-						
-<form action="//clicandpick.us11.list-manage.com/subscribe/post?u=d18c52ee0f0cdce46edc85fa6&amp;id=8b996af059" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-horizontal validate" target="_blank" novalidate>
-
-								<div class="col-md-12">
-									<div class="form-group">
-										<input class="form-control" type="text" value="" name="FNAME" class="required" placeholder="Pr&eacute;nom" required>
-									</div>
-									<div class="form-group">
-										<input type="email" value="" name="EMAIL" class="required form-control" placeholder="Email" required>
-									</div>
-									<div class="form-group">
-									<textarea class="form-control" name="AVIS" placeholder="Donnez votre avis sur le concept" rows="3"></textarea>
-									</div>
-									  <div class="form-group checkbox bottom15">
-										<label>
-										  <input type="checkbox" value="1" name="group[4637][1]"> Client
-										</label>
-									  <label>
-										  <input type="checkbox" value="2" name="group[4637][2]"> Commercant
-										</label>
-									  </div>
-
-								
-								    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d18c52ee0f0cdce46edc85fa6_8b996af059" tabindex="-1" value=""></div>
-
-								<div class="form-group text-center">
-									<input type="submit" name="subscribe" value="Ok" class="btn btn-green-round" />
-								</div>
-								</div>
-							</form>			  
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" id="menu">
+      <div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand h100" href="#firstPage">
+	    <img alt="Brand" src="assets/imgs/logo.png" height="64" >
+	  </a>
 	</div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+	    <li data-menuanchor="secondPage">
+	      <a href="#secondPage">&Agrave; propos	</a>
+	    </li>
+	    <li data-menuanchor="fourthPage" >
+	      <a href="#fourthPage">Contact</a>
+	    </li>
+	    <li>
+	      <a href="https://www.facebook.com/clicandpick"
+		 target="_blank">
+		<img alt="Facebook" src="assets/imgs/F_icon.svg.png"
+		     height="15">
+	      </a>
+	    </li>
+	  </ul>
+	</div>
+      </div>
+    </nav>
 
-	  <div id="fullpage">
-	    <div class="section" id="home" data-anchor="firstPage">
-	     	<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Marre de faire la queue pour manger!</h1>
-					</div>
-					<div class="col-md-12 sub">
-						<span>Rejoignez la 1&egrave;re application o&ugrave; vous pouvez commander et r&eacute;cup&eacute;rer votre repas sans faire la queue!</span>
-					</div>
-					<div class="form-inline col-md-12 top2e">
-								<div class="form-group">
-									<input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Email">
-								</div>
-							<button type="submit" class="btn btn-red btn-lg" data-toggle="modal" data-target="#myModal">Inscrivez-vous</button>
-					</div>
-<!--					<div class="col-md-12 text-center">
-						<button type="submit" class="btn btn-red btn-lg margin2e" data-toggle="modal" data-target="#myModal">Inscrivez-vous</button>
-					</div>
---->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	    <h3 class="modal-title text-center" id="myModalLabel">Inscrivez-vous</h3>
+	  </div>
+	  <div class="modal-body">
+	    <div class="container-fluid">
+	      <div class="row">
 
-				</div>
-			</div>
-		</div>
+		<!-- Begin MailChimp Signup Form -->
+
 		
+		<form action="//clicandpick.us11.list-manage.com/subscribe/post?u=d18c52ee0f0cdce46edc85fa6&amp;id=8b996af059" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-horizontal validate" target="_blank">
 
-	    <div class="section" id="uvp" data-anchor="thirdPage">
-	      <div class="doc-header">
-		<div class="container ">
-		  <div class="row">
-		    <div class="col-md-12"><h2 class="center">Ne plus attendre pour manger !</h2></div>
-		  </div>
-		</div>
-	      </div>
-
-	      <div class="container">
-		<div class="row">
-		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
-		    <div class="box uvp uvp1"></div>
-		    <div class="picto">
-		      <div class="green-round">
-			<img src="assets/imgs/tel.png" alt="Telephone" />
-		      </div>
-		      <div class="picto-legend">Commandez en ligne</div>
-		    </div>
-		  </div>
-		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
-		    <div class="box uvp uvp2"></div>
-		    <div class="picto">
-		      <div class="green-round">
-			<img src="assets/imgs/bouf.png" alt="Telephone" />
-		      </div>
-		      <div class="picto-legend">Choisissez ce que vous voulez</div>
-		    </div>
-		  </div>
-		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
-		    <div class="box uvp uvp3"> </div>
-		    <div class="picto">
-		      <div class="green-round">
-			<img src="assets/imgs/wallet.png" alt="Telephone" />
-		      </div>
-		      <div class="picto-legend">Payez en ligne</div>
-		    </div>
-		  </div>
-		  <div class="col-xs-12 col-sm-6 col-md-3 stick">
-		    <div class="box uvp uvp4"></div>
-		    <div class="picto">
-		      <div class="green-round">
-			<img src="assets/imgs/box.png" alt="Telephone" />
-		      </div>
-		      <div class="picto-legend">Venez chercher votre repas</div>
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-		
-			    <div class="section" id="description" data-anchor="secondPage">
-	      <div class="doc-header">
-		<div class="container ">
-		  <div class="row">
-		    <div class="col-md-12"><h2 class="center">Notre histoire, Notre concept</h2></div>
-		  </div>
-		</div>
-	      </div>
-	      <div class="container">
-		<div class="row">
 		  <div class="col-md-12">
-		    <p>Durant notre trip en Australie, nous avons travaill&eacute; dans de nombreux coffee shops!</p>
-		    <p>Nous avons d&eacute;couvert un syst&egrave;me in&eacute;dit celui du caf&eacute;, sandwich ou plat chaud &agrave; la demande.</p>
+		    <div class="form-group">
+		      <input class="form-control" type="text" name="FNAME" placeholder="Pr&eacute;nom" required>
+		    </div>
+		    <div class="form-group">
+		      <input class="form-control" type="email" id="emailPopup" name="EMAIL" placeholder="Email" required>
+		    </div>
+		    <div class="form-group">
+		      <textarea class="form-control" name="AVIS" placeholder="Donnez votre avis sur le concept" rows="3"></textarea>
+		    </div>
+		    <div class="form-group checkbox bottom15">
+		      <label>
+				<input type="checkbox" value="2"
+			       name="group[4637][2]">Devenir commer&ccedil;ant partenaire
+		      </label>
+		    </div>
 
-		
+		    
+		    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d18c52ee0f0cdce46edc85fa6_8b996af059" tabindex="-1" value=""></div>
 
-		    <p class="big space"><b>Nous avons
-		    d&eacute;cid&eacute; d'adapter ce concept en
-			France.</b></p>
-		    <p>Notre application permettra d'avoir sa commande sans faire la queue en pr&eacute;commandant.</p>
+		    <div class="text-center">
+		      <input type="submit" name="subscribe" value="Ok" class="btn btn-green-round" />
+		    </div>
 		  </div>
-		</div>
-
-	      </div>
-	    </div>
-	    <div class="section" id="contact" data-anchor="fourthPage">
-	      <div class="doc-header">
-		<div class="container ">
-		  <div class="row">
-		    <div class="col-md-12"><h2 class="center">Contact</h2></div>
-		  </div>
-		</div>
-	      </div>
-	      <div class="container">
-		<div class="row">
-		  <div class="col-md-12">
-		    <form>
-		      <div class="inputs">
-			<div class="row">
-			  <div class="col-md-6">
-			    <div class="form-group">
-			      <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
-			    </div>
-			  </div>
-			  <div class="col-md-6">
-			    <div class="form-group">
-			      <input type="email"  class="form-control" id="email" name="email" placeholder="Email" required>
-			    </div>
-			  </div>
-			</div>
-			<div class="form-group">
-			  <textarea class="form-control" id="comments" name="comments" placeholder="Votre texte" rows="6"></textarea>
-			</div>
-		      </div>
-		      <button type="submit" class="btn btn-center btn-green-round">Ok</button>
-		    </form>
-		  </div>
-		</div>
+		</form>			  
 	      </div>
 	    </div>
 	  </div>
-	</body>
+	</div>
+      </div>
+    </div>
+
+    <div id="newsletter" class="modal fade">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title text-center">Merci de nous suivre</h3>
+	  </div>
+	  <div class="modal-body text-center">
+            <p>Votre inscription &agrave; la newsletter a bien
+              &eacute;t&eacute; prise en compte.</p>
+	    <p>Nous vous tiendrons au courant des avanc&eacute;es de Clic&amp;Pick.</p>
+	  </div>
+	</div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="fullpage">
+
+      <div class="section" id="home" data-anchor="firstPage">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-7">
+	      <h1>Marre de faire la queue pour manger !</h1>
+	    </div>
+	    <div class="col-md-7 sub">
+	      <span>Rejoignez la 1<sup>&egrave;re</sup> application
+		o&ugrave; vous pouvez commander et r&eacute;cup&eacute;rer
+		votre repas sans faire la queue !</span>
+	    </div>
+	    <div class="form-inline col-md-12 top2e">
+	      <div class="form-group">
+		<input type="text" id="emailHeader" class="form-control input-lg" id="exampleInputEmail1" placeholder="Email">
+	      </div>
+	      <button type="submit" class="inscription btn btn-red btn-lg hidden-xs"
+		      data-toggle="modal"
+		      data-target="#myModal">Inscrivez-vous</button>
+	      <button type="submit" class="inscription btn btn-red btn-lg btn-block visible-xs-block"
+		      data-toggle="modal"
+		      data-target="#myModal">Inscrivez-vous</button>
+	    </div>
+	  </div>
+	</div>
+
+      </div>
+      
+      <div class="section" id="uvp" data-anchor="thirdPage">
+	<div class="doc-header">
+	  <div class="container ">
+	    <div class="row">
+	      <div class="col-md-12"><h2 class="center">N'attendez plus pour manger !</h2></div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-6 col-md-3 stick">
+	      <div class="box uvp uvp1"></div>
+	      <div class="picto">
+		<div class="green-round">
+		  <div class="pictoTel valign" ></div>
+		</div>
+		<div class="picto-legend">Commandez en ligne</div>
+	      </div>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3 stick">
+	      <div class="box uvp uvp2"></div>
+	      <div class="picto">
+		<div class="green-round">
+		  <div class="pictoBouf valign" ></div>
+		</div>
+		<div class="picto-legend">Choisissez ce que vous voulez</div>
+	      </div>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3 stick">
+	      <div class="box uvp uvp3"></div>
+	      <div class="picto">
+		<div class="green-round">
+		  <div class="pictoWallet valign" ></div>
+		</div>
+		<div class="picto-legend">Payez en ligne</div>
+	      </div>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3 stick">
+	      <div class="box uvp uvp4"></div>
+	      <div class="picto">
+		<div class="green-round">
+		  <div class="pictoBox valign" ></div>
+		</div>
+		<div class="picto-legend">Venez chercher votre repas</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+      <div class="section" id="description" data-anchor="secondPage">
+	<div class="doc-header">
+	  <div class="container ">
+	    <div class="row">
+	      <div class="col-md-12"><h2 class="center">Notre histoire, Notre concept</h2></div>
+	    </div>
+	  </div>
+	</div>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-12">
+	      <p>Durant notre trip en Australie, nous avons
+		travaill&eacute; dans de nombreux coffee shops !</p>
+	      <p>Nous avons d&eacute;couvert un syst&egrave;me
+		in&eacute;dit : celui du caf&eacute;, sandwich ou plat chaud &agrave; la demande.</p>
+
+	      
+
+	      <p class="big space"><b>Nous avons
+		  d&eacute;cid&eacute; d'adapter ce concept en
+		  France.</b></p>
+	      <p>Notre application vous permettra de retirer votre commande sans faire la queue en pr&eacute;commandant.</p>
+	    </div>
+	  </div>
+
+	</div>
+      </div>
+      <div class="section" id="contact" data-anchor="fourthPage">
+	<div class="doc-header">
+	  <div class="container ">
+	    <div class="row">
+	      <div class="col-md-12"><h2 class="center">Contact</h2></div>
+	    </div>
+	  </div>
+	</div>
+	<div class="container bottom2e">
+	  <div class="row">
+	    <div class="col-md-12">
+	      <form action="http://clicandpick.appspot.com/rest/contact" method="POST" id="contactForm" >
+		<div class="inputs">
+		  <div class="row">
+		    <div class="col-md-6">
+		      <div class="form-group">
+			<input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+		      </div>
+		    </div>
+		    <div class="col-md-6">
+		      <div class="form-group">
+			<input type="email"  class="form-control" id="email" name="email" placeholder="Email" required>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <textarea class="form-control" id="comments" name="comments" placeholder="Votre texte" rows="6"></textarea>
+		  </div>
+		</div>
+		<button type="submit" class="btn btn-center btn-green-round">Ok</button>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	<footer class="navbar-fixed-bottom text-center">
+	  &copy;2015 Clic&amp;Pick
+	</footer>
+      </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+		$('#fullpage').fullpage({
+			autoScrolling: false,
+			anchors:['firstPage', 'secondPage','thirdPage','fourthPage'],
+			scrollingSpeed: 1000,
+			menu: '#menu',
+			css3:true,
+			fitToSection:false,
+
+		});
+
+		if (matchMedia) {
+			var mq = window.matchMedia("(min-width: 768px)");
+			mq.addListener(WidthChange);
+			WidthChange(mq);
+		}
+		
+		// Activate background slider or not depending on the width of the window
+		var backstretchDiv = "body";
+		function WidthChange(mq) {
+			if (mq.matches) {
+				$(backstretchDiv).backstretch([
+					"assets/imgs/back1.jpg"
+					, "assets/imgs/back2.jpg"
+					, "assets/imgs/back3.jpg"
+				], {duration: 5000, fade: 750, centeredY: false});         
+			}
+			 else {
+				if($(backstretchDiv).data("backstretch"))
+					$(backstretchDiv).backstretch("destroy", false);
+			 }
+		}
+		WidthChange(window.matchMedia("(min-width: 768px)"));
+		
+		
+		// Sends the email field in the popup
+		$(".inscription").click(function() {
+			jQuery("#emailPopup").val(jQuery("#emailHeader").val());
+		});
+
+		 $("#contactForm").bind('ajax:complete', function() {
+			alert("ok");
+         // tasks to do 
+
+
+		});
+
+    });
+
+
+    function GetURLParameter(sParam) {
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+		for (var i = 0; i < sURLVariables.length; i++){
+			var sParameterName = sURLVariables[i].split('=');
+			if (sParameterName[0] == sParam){
+				return sParameterName[1];
+			}
+		}
+    }
+
+	if(GetURLParameter("nl") === "true")
+		$('#newsletter').modal();
+		
+</script>
+  </body>
 </html>

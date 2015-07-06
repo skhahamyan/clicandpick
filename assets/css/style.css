@@ -1,11 +1,16 @@
-	@font-face {
+@font-face {
     font-family:"TrashHand";
     src: url("../fonts/TrashHand.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family:"Century Gothic";
+    src: url("../fonts/CenturyGothic.ttf") /* TTF file for CSS3 browsers */
 }
 
 body {
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
+    padding-right: 0 !important; 
 }
 
 .h100 {
@@ -14,9 +19,11 @@ body {
 
 .navbar-toggle {
     background-color: #f26356;
-	margin-top: 31px;
-	margin-bottom: 31px;
+	margin-top: 21px;
+	margin-bottom: 21px;
 }
+
+
 
 .icon-bar {
     background-color: white;
@@ -44,16 +51,21 @@ body {
 }
 
 .navbar-nav {
-    padding: 22px 0;
+    padding: 12px 0;
 }
 
+#contact, #uvp {
+    background-color: white;
+}
 .fp-tableCell {
+
   padding-top: 96px;
 }
 
 #home {
-    background: url("../imgs/back.jpg");
+
     background-size: cover;
+    background-position: bottom;
 }
 
 .center {
@@ -97,20 +109,18 @@ body {
 }
 
 h1 {
-	color: white;
 	font-size: 54px;
 }
 
 .sub {
-	color: white;
 	font-size: 25px;
 }
 
-@media (max-width: 768px) { 
-	h1 ,
-	.sub {
-		text-align: center;
-	}
+h1, .sub {
+    color: white;
+    -webkit-text-shadow: 0 0 5px gray;
+    -moz-text-shadow: 0 0 5px gray;
+    text-shadow: 0 0 5px gray;
 }
 
 h2, h3{
@@ -126,19 +136,61 @@ h3 {
     font-size: 30px;
 }
 
+.big {
+    font-size: 28px;
+}
+
+@media (max-width: 768px) { 
+	h1 ,
+	.sub {
+		text-align: center;
+	}
+	h1 {
+	    font-size: 31px;
+	}
+	h2 {
+	    font-size: 32px;
+	}
+	.sub, p {
+	    font-size: 17px;
+	}
+	.big {
+	    font-size: 21px;
+	}
+	#home {
+	    background: url("../imgs/phoneback.jpg");
+	    background-size: cover;
+	    background-position: bottom;
+	}
+
+	.navbar-toggle {
+	    margin-top: 13px;
+	    margin-bottom: 13px;
+	}
+
+	.navbar-brand>img{
+	    height: 48px;
+	}
+
+	.backstretch {
+	    display: none;
+	}
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 #description {
     font-size: 22px;
     font-weight: 100;
     color: white;
     
-    background-image: url("../imgs/australie.png");
+    background-image: url("../imgs/australie.jpg");
     background-size: cover;
 
     text-align: center;
-}
-
-.big {
-    font-size: 28px;
 }
 
 .space {
@@ -154,7 +206,7 @@ h3 {
 .box:before{
     content: "";
     display: block;
-    padding-top: 100%; 	/* initial ratio of 1:1*/
+    padding-top: 75%; 	
 }
 
 .box-content {
@@ -167,18 +219,19 @@ h3 {
 
 .uvp {
     background-size: cover;
+	background-position: center;
 }
 
 .uvp1 {
-    background-image: url("../imgs/uvp1.png");
+    background-image: url("../imgs/uvp1.jpg");
 }
 
 .uvp2 {
-    background-image: url("../imgs/uvp2.png");
+    background-image: url("../imgs/uvp2.jpg");
 }
 
 .uvp3 {
-    background-image: url("../imgs/uvp3.png");
+    background-image: url("../imgs/uvp3.jpg");
 }
 
 .uvp4 {
@@ -256,7 +309,8 @@ label.green {
 }
 
 .top2e{
-  margin-top: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .form-control:focus {
@@ -267,9 +321,36 @@ label.green {
 }
 
 #home input {
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.9);
 }
 
 .bottom15 {
 	margin-bottom: 15px !important;
 }
+
+footer {
+    padding-bottom: 40px;
+}
+
+.backstretch img {
+    bottom: 0 !important;
+    top: initial !important;
+}
+
+.bottom2e {
+    margin-bottom: 7em;
+}
+
+.valign{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.pictoBouf{top:0px;left:0px;
+width:67px;height:56px;background: url("../imgs/picto.png") no-repeat -0px -0px;}
+.pictoBox{top:0px;left:0px;
+width:56px;height:66px;background: url("../imgs/picto.png") no-repeat -0px -56px;}
+.pictoTel{top:0px;left:0px;
+width:39px;height:56px;background: url("../imgs/picto.png") no-repeat -67px -0px;}
+.pictoWallet{top:0px;left:0px;
+width:53px;height:54px;background: url("../imgs/picto.png") no-repeat -56px -56px;}
